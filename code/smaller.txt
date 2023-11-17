@@ -1,0 +1,12 @@
+matomo-org/matomo-java-tracker
+mooso/azure-tables-hadoop
+thelinmichael/spotify-web-api-java
+Jimmy-Shi/bean-query
+denlab/fest-assert-goodies
+mindsnacks/JavaZinc
+vchain-us/jvcn
+shibing624/similarity
+mogaleaf/java-usbmuxd
+jqassistant-contrib/jqassistant-test-impact-analysis-plugin
+SkPhilipp/mqtt-drpc
+shamsoftware/sham-ssh
