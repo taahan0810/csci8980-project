@@ -49,7 +49,10 @@ for file in allTestFiles:
             while j < len(allLines)-1:
                 j+=1
                 if "public" in allLines[j] or "private" in allLines[j] or "protected" in allLines[j] or "void" in allLines[j]:
-                    i = j + 1
+                    if  "throws" in  allLines[j+1]:
+                        i = j+2
+                    else:
+                        i = j + 1
                     allLines.insert(i, "long swagLol = -1000;\n")
                     i+=1
                     break 
