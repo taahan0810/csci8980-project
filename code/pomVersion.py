@@ -12,7 +12,7 @@ for l in range(len(pomContent)):
     if "artifactId" in line and "maven-compiler-plugin" in line:
         looking = True
         continue
-    if "<target>" in line and looking:
+    if ("<target>" in line and looking) or "maven.compiler.target" in line:
         print("target acuqired")
         lookingTimes += 1
         lis = line.replace('<', '>').split('>')
@@ -25,7 +25,7 @@ for l in range(len(pomContent)):
                     #write new line
             except:
                 continue 
-    elif "<source>" in line and looking:
+    elif ("<source>" in line and looking) or "maven.compiler.source" in line:
         print(lookingTimes)
         print("source found")
         lookingTimes += 1
